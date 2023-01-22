@@ -10,7 +10,7 @@ Statemint and signals are both tools used to decouple parts of your application.
 
 While signals are useful for decoupling a large number of indepedent nodes, their decentralized nature makes it hard to reason about your entire state at once. A single node may need to connect to many different signals to ensure that it can keep its own state up to date, and in more complex systems it is easy to miss a signal connection that should update the node's state or to forget to fire a signal to trigger an update in all cases.
 
-Statemint reduces this complexity by having both dispatchers and subscribers work with a single centralized store. Subscibers only need to specify what state they are interested in rather than knowing all of the different ways that state could be modified. Similarly, dispatchers only need to define how they want the state to change rather than being aware of all of the notifications that need to be fired about that change.
+Statemint reduces this complexity by having both dispatchers and subscribers work with a single centralized store. Subscribers only need to specify what state they are interested in rather than knowing all of the different ways that state could be modified. Similarly, dispatchers only need to define how they want the state to change rather than being aware of all of the notifications that need to be fired about that change.
 
 Statemint works best in situations where there is complex, interconnected global state and where there are several actions and subscribers that are interested in the same or overlapping bits of state.
 
