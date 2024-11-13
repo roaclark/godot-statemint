@@ -87,7 +87,7 @@ The set of action types that can modify the application state.
 
 ## Authors
 
-* **Rachel Rosalia** <<rachel@rosalia.me>>
+* **Alex Rosalia** <<alex@rosalia.me>>
 
 ## License
 
